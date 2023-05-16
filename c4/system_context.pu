@@ -1,0 +1,24 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+' uncomment the following line and comment the first to use locally
+' !include C4_Context.puml
+
+LAYOUT_WITH_LEGEND()
+
+title System Context diagram for Data Platform
+
+Person(SE, "Engineer", "A user that writes code to access data and process it.")
+Person(Analyst, "Analyst", "A user who creates reports and Dashboards with data")
+Person(App, "App", "A program such as a microservice or a BI-tool that acesses data.")
+
+System(platform, "Data Platform", "Allows customers to view information about their bank accounts, and make payments.")
+System_Ext(API, "Data Delivery Tool", "The internal Microsoft Exchange e-mail system.")
+
+
+Rel_Back(SE, platform, "Consumes Data")
+Rel_Back(Analyst, platform, "Consumes Data")
+Rel_Back(App, platform, "Consumes Data")
+
+Rel(API, platform, "Produces Data to")
+
+@enduml
