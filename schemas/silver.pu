@@ -1,0 +1,21 @@
+@startuml
+<style>
+class {
+    BackgroundColor transparent
+    linecolor transparent
+}
+</style>
+
+
+hide empty members
+hide circle
+
+class "<#lightblue,#black>|=  N8j2:float  |=  42mj:float  |=  6tk3:binary |= engine_type|\n\
+<#white>|  11.329  |  13.523   | 1 |153-1 |\n\
+<#white>|  74.375  |  24.277  | 1 |1805-1|\n\
+<#white>|  71.942  |  55.736  | 0 |4,009-1|" as machine_raw {
+}
+
+
+
+@enduml

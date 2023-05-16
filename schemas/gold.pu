@@ -1,0 +1,19 @@
+@startuml
+<style>
+class {
+    BackgroundColor transparent
+    linecolor transparent
+}
+</style>
+
+
+hide empty members
+hide circle
+
+
+class "<#lightblue,#black>|= CUSTOMERNAME:string |= AVG: float|=TOTAL:float |\n\
+<#white>|  2  |  55.736  |  1684115918 | 1 | John Smith | 8348552345 | 123 anystreet | New York | NY| 234|" as sales {
+}
+
+
+@enduml
