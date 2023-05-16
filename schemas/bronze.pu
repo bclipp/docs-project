@@ -1,0 +1,32 @@
+@startuml
+<style>
+class {
+    BackgroundColor transparent
+    linecolor transparent
+}
+</style>
+
+
+hide empty members
+hide circle
+
+class "<#lightblue,#black>|=  N8j2:float  |=  42mj:float  |=  6tk3:binary  |\n\
+<#white>|  11.329  |  13.523   | 1 |\n\
+<#white>|  74.375  |  24.277  | 1 |\n\
+<#white>|  71.942  |  55.736  | 0 |" as machine_raw {
+}
+
+
+class "<#lightblue,#black>|=  MANDT:string  |=  BUKRS:string  |= BELNR:string  |= GJAHR:float |=  BUZEI:float  |\n\
+<#white>|  sdfs  |  guyu5t   | 1.5 | 4.3| 1.6 |\n\
+<#white>| weth  |  fghe  | 1.1 | 4.2| 14.3 |\n\
+<#white>|  fdghdf  |  dfger  | 12.4 | 4.8| 1.9 |" as sap_BSEG {
+}
+
+
+class "<#lightblue,#black>|= ORDERNUMBER |=SALE |= ORDERDATE |=STATUS |= CUSTOMERNAME |= PHONE |=ADDRESSLINE |= CITY |= STATE |= STORE |\n\
+<#white>|  2  |  55.736  |  1684115918 | 1 | John Smith | 8348552345 | 123 anystreet | New York | NY| 234|" as sales {
+}
+
+
+@enduml
